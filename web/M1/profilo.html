@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Profilo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Sara Valeria Scardigli">
+        <meta name="keywords" content="login">
+    </head>
+    <body>
+        <div id="title">
+            <h1>Profilo</h1>
+        </div>
+        <form action="pagina.php" method="post">
+                <label for="nomeutente">Nome utente</label>
+                <input type="text" name="nomeutente"
+                id="nomeutente" value="inserire nome" />
+                <br>
+                <label for="cognomeutente">Cognome utente</label>
+                <input type="text" name="cognomeutente"
+                id="cognomeutente" value="inserire cognome" />
+                <br>
+                <label for="immagineprofilo">Immagine profilo</label>
+                <input type="url" name="immagineprofilo"
+                       id="immagineprofilo" value=""/>
+                <br>
+                <label for="presentazione">Frase di presentazione</label>
+                <textarea rows="4" cols="20"
+                         name="presentazione" id="presentazione" >
+                         inserire frase di presentazione
+                </textarea>
+                <br>
+                <label for="datanascita">Data di nascita</label>
+                <input type="date" name="bday" max="2006-12-31"
+                       id="datanascita" value="" />
+                <br>
+                <label for="pswd">Password</label>
+                <input type="password" name="pswd"
+                id="pswd" value="oscurato" />
+                <br>
+                <label for="confermapassword">Conferma password</label>
+                <input type="password" name="pswd"
+                id="confermapassword" value="oscurato" />
+                <br>
+                <input type="submit" value="Invio">
+        </form>
+        <nav id="externalnav">
+            <a href="http://localhost:8080/AmmM1/M1/descrizione.html" target="_blank">Vai alla descrizione</a><br>
+            <a href="http://localhost:8080/AmmM1/M1/login.html" target="_blank">Vai al login</a><br>
+        </nav>
+    </body>
+</html>
