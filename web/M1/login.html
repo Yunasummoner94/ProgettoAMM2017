@@ -11,10 +11,42 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Sara Valeria Scardigli">
         <meta name="keywords" content="login">
+        
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     </head>
     <body>
-        <div id="title">
-            <h1>Login</h1>
+    <div id="header">
+            <div id="title">
+                <h1>NerdBook</h1>
+            </div>
+             <nav>
+                <ul>
+                    <li><a href="http://localhost:8080/AmmM1/M1/descrizione.html">Vai alla descrizione</a></li>
+                    <li><a href="http://localhost:8080/AmmM1/M1/bacheca.html">Vai alla bacheca</a></li>
+                    <li><a href="http://localhost:8080/AmmM1/M1/profilo.html">Vai al profilo</a></li>
+                </ul>
+            </nav>
+
+            <div id="logoutarea"> 
+               <h4 class="logouts"><a href="#"><img title="icona" alt="icona" src="../Immagini/icona.png">Logout</a></h4>
+            </div>
+
+            <div id="left_sidebar">
+                
+                <div id="persone">
+                    <h3 class="title">Persone</h3>
+                    <h4 class="nome_utente" id="pollynomio"><a href="#">Polly Nomio</a></h4>
+                    <h4 class="nome_utente" id="jonsnow"><a href="#">Jon Snow</a></h4>
+                    <h4 class="nome_utente" id="polemistamisterioso"><a href="#">Polemista misterioso</a></h4>
+                </div>  
+
+                <div id="gruppi">
+                    <h3 class="title">Gruppi</h3>
+                    <h4 class="nome_gruppo" id="paperelle"><a href="#">Paperelle</a></h4>
+                    <h4 class="nome_gruppo" id="disagiati"><a href="#">Disagiati</a></h4>
+                    <h4 class="nome_gruppo" id="festa"><a href="#">Festa di Laurea</a></h4>
+                </div>        
+            </div>
         </div>
         <form action="pagina.php" method="post">
                 <label for="username">Username</label>
@@ -26,11 +58,6 @@ and open the template in the editor.
                 id="pswd" value="oscurato" />
                 <br>
                 <input type="submit" value="Invio">
-        </form> 
-        <nav id="externalnav">
-            <a href="http://localhost:8080/AmmM1/M1/descrizione.html" target="_blank">Vai alla descrizione</a><br>
-            <a href="http://localhost:8080/AmmM1/M1/profilo.html" target="_blank">Vai al profilo</a><br>
-            <a href="http://localhost:8080/AmmM1/M1/bacheca.html" target="_blank">Vai alla bacheca</a><br>
-        </nav>
+        </form>
     </body>
 </html>
